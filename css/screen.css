@@ -199,6 +199,18 @@ a:focus {
     display: flow-root;
 }
 
+
+/* color modifiers */
+.o-row--neutral-x-light {
+    background-color: #F7F7FA;
+}
+
+.o-row--gradient {
+    background: linear-gradient(to top right, #5051DB, #3887F7);
+    color: #FFF
+}
+
+
 /* size modifiers */
 
 .o-row--lg {
@@ -387,6 +399,7 @@ a:focus {
     }
 }
 
+
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
@@ -476,6 +489,7 @@ a:focus {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
+        align-content: space-between;
     }
 
     .c-header__nav {
@@ -605,6 +619,25 @@ a:focus {
 .c-link-cta:hover::after {
     transform: scaleX(1);
     background-color: #3E3EA8;
+}
+
+/* inversed */
+.c-link-cta--inverse,
+.c-link-cta--inverse:visited,
+.c-link--cta--inverse:active {
+    color: #FFF
+}
+
+.c-link-cta::before {
+    background-color: #FFF;
+}
+
+.c-link-cta--inverse::after {
+    background-color: #FFF;
+}
+
+.c-link-cta--inverse:hover::after {
+    background-color: #FFF;
 }
 
 
